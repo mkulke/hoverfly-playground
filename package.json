@@ -1,0 +1,20 @@
+{
+  "name": "hoverfly-tst",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pretest": "hoverctl start",
+    "test": "HTTP_PROXY=http://localhost:8500 NO_PROXY=localhost:8888 jest || hoverctl stop",
+    "posttest": "hoverctl stop"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "jest": "^22.1.1"
+  }
+}

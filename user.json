@@ -1,0 +1,92 @@
+{
+	"data": {
+		"pairs": [
+			{
+				"request": {
+					"path": {
+						"exactMatch": "/users/1"
+					},
+					"method": {
+						"exactMatch": "GET"
+					},
+					"destination": {
+						"exactMatch": "jsonplaceholder.typicode.com"
+					},
+					"scheme": {
+						"exactMatch": "http"
+					},
+					"query": {
+						"exactMatch": ""
+					},
+					"body": {
+						"exactMatch": ""
+					}
+				},
+				"response": {
+					"status": 200,
+					"body": "{\n  \"id\": 1,\n  \"name\": \"Peter Graham\",\n  \"username\": \"Bret\",\n  \"email\": \"Sincere@april.biz\",\n  \"address\": {\n    \"street\": \"Kulas Light\",\n    \"suite\": \"Apt. 556\",\n    \"city\": \"Gwenborough\",\n    \"zipcode\": \"92998-3874\",\n    \"geo\": {\n      \"lat\": \"-37.3159\",\n      \"lng\": \"81.1496\"\n    }\n  },\n  \"phone\": \"1-770-736-8031 x56442\",\n  \"website\": \"hildegard.org\",\n  \"company\": {\n    \"name\": \"Romaguera-Crona\",\n    \"catchPhrase\": \"Multi-layered client-server neural-net\",\n    \"bs\": \"harness real-time e-markets\"\n  }\n}",
+					"encodedBody": false,
+					"headers": {
+						"Access-Control-Allow-Credentials": [
+							"true"
+						],
+						"Cache-Control": [
+							"public, max-age=14400"
+						],
+						"Cf-Cache-Status": [
+							"REVALIDATED"
+						],
+						"Cf-Ray": [
+							"3dda8c3cd172295d-DUB"
+						],
+						"Content-Type": [
+							"application/json; charset=utf-8"
+						],
+						"Date": [
+							"Mon, 15 Jan 2018 17:27:48 GMT"
+						],
+						"Etag": [
+							"W/\"1fd-+2Y3G3w049iSZtw5t1mzSnunngE\""
+						],
+						"Expires": [
+							"Mon, 15 Jan 2018 21:27:48 GMT"
+						],
+						"Hoverfly": [
+							"Was-Here"
+						],
+						"Pragma": [
+							"no-cache"
+						],
+						"Server": [
+							"cloudflare"
+						],
+						"Set-Cookie": [
+							"__cfduid=d55ce8e3753cd68a01d7bb017418c76141516037267; expires=Tue, 15-Jan-19 17:27:47 GMT; path=/; domain=.typicode.com; HttpOnly"
+						],
+						"Vary": [
+							"Origin, Accept-Encoding"
+						],
+						"Via": [
+							"1.1 vegur"
+						],
+						"X-Content-Type-Options": [
+							"nosniff"
+						],
+						"X-Powered-By": [
+							"Express"
+						]
+					},
+					"templated": false
+				}
+			}
+		],
+		"globalActions": {
+			"delays": []
+		}
+	},
+	"meta": {
+		"schemaVersion": "v4",
+		"hoverflyVersion": "v0.15.0",
+		"timeExported": "2018-01-15T18:28:26+01:00"
+	}
+}
