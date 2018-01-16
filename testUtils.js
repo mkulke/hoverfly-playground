@@ -41,7 +41,7 @@ function _capture() {
 function simulate(path) {
   let writeSimulation = false;
 
-  beforeEach(() => {
+  beforeAll(() => {
     let simulation;
 
     try {
@@ -58,7 +58,7 @@ function simulate(path) {
       .then(() => _setSimulation(simulation));
   });
 
-  afterEach(() => {
+  afterAll(() => {
     if (!writeSimulation) {
       return Promise.resolve();
     }

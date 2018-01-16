@@ -7,9 +7,9 @@ function getNumber() {
   }).then(users => users.length);
 };
 
-function getUser() {
+function getUser(number) {
   return rp({
-    uri: 'http://jsonplaceholder.typicode.com/users/1',
+    uri: `http://jsonplaceholder.typicode.com/users/${number}`,
     json: true,
   });
 };

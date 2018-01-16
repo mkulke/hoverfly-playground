@@ -13,8 +13,13 @@ describe('getNumber', () => {
 describe('getUser', () => {
   simulate('./user.json');
 
-  it('is peter', () => {
-    return getUser()
-      .then(user => expect(user.name).toBe('Peter Graham'));
+  it('returns peter', () => {
+    return getUser(1)
+      .then(user => expect(user.name).toBe('Leanne Graham'));
+  });
+
+  it('returns ervin', () => {
+    return getUser(2)
+      .then(user => expect(user.name).toBe('Ervin Howell'));
   });
 });
