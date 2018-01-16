@@ -1,19 +1,17 @@
 const { getNumber, getUser } = require('./lib.js');
 const { simulate } = require('./testUtils.js');
-const user = require('./user.json');
-const users = require('./users.json');
 
 describe('getNumber', () => {
-  simulate(users);
+  simulate('./users.json');
 
-  it('works', () => {
+  it('is 10', () => {
     return getNumber()
       .then(number => expect(number).toBe(10));
   });
 });
 
 describe('getUser', () => {
-  simulate(user);
+  simulate('./user.json');
 
   it('is peter', () => {
     return getUser()
